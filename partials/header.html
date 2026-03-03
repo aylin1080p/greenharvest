@@ -1,1 +1,61 @@
-<header class="header section"><div class="container">Header</div></header>
+    <!-- Header -->
+    <header class="gh-header" id="gh-header">
+      <div class="gh-header__bar">
+        <a href="#" class="gh-logo" aria-label="Green Harvest home">
+          <img class="gh-logo__img gh-logo__img--desktop" src="./img/logo-desktop.svg" alt="Green Harvest" decoding="async" />
+          <img class="gh-logo__img gh-logo__img--mobile" src="./img/logo-mobile.svg" alt="Green Harvest" decoding="async" />
+        </a>
+
+        <div class="gh-header__desktop-group">
+          <nav class="gh-nav gh-nav--desktop" aria-label="Main navigation">
+            <a class="gh-nav__item" href="#how-it-works">How It Works</a>
+            <a class="gh-nav__item" href="#vegetables">Vegetables</a>
+            <a class="gh-nav__item" href="#reviews">Reviews</a>
+          </nav>
+          <a class="gh-cta" href="#order">Shop now</a>
+        </div>
+
+        <button
+          class="gh-burger"
+          id="gh-menu-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="gh-menu-tablet gh-menu-mobile"
+          aria-label="Open menu"
+        >
+          <span class="gh-burger__line"></span>
+        </button>
+      </div>
+
+      <div class="gh-backdrop" id="gh-backdrop" hidden></div>
+
+      <aside class="gh-tablet-menu" id="gh-menu-tablet" aria-hidden="true">
+        <div class="gh-tablet-menu__header">
+          <button class="gh-close gh-close--tablet" id="gh-menu-close-tablet" type="button" aria-label="Close menu">
+            <span></span>
+          </button>
+        </div>
+
+        <nav class="gh-nav gh-nav--drawer" aria-label="Main navigation">
+          <a class="gh-nav__item" href="#how-it-works">How It Works</a>
+          <a class="gh-nav__item" href="#vegetables">Vegetables</a>
+          <a class="gh-nav__item" href="#reviews">Reviews</a>
+        </nav>
+
+        <a class="gh-cta gh-cta--drawer" href="#order">Shop now</a>
+      </aside>
+
+      <div class="gh-mobile-menu" id="gh-menu-mobile" aria-hidden="true">
+        <button class="gh-close gh-close--mobile" id="gh-menu-close-mobile" type="button" aria-label="Close menu">
+          <span></span>
+        </button>
+
+        <nav class="gh-nav gh-nav--drawer gh-nav--mobile" aria-label="Main navigation">
+          <a class="gh-nav__item" href="#how-it-works">How It Works</a>
+          <a class="gh-nav__item" href="#vegetables">Vegetables</a>
+          <a class="gh-nav__item" href="#reviews">Reviews</a>
+        </nav>
+
+        <a class="gh-cta gh-cta--drawer gh-cta--mobile" href="#order">Shop now</a>
+      </div>
+    </header>

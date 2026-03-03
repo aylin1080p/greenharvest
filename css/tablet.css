@@ -1,6 +1,219 @@
-@media screen and (max-width: 1279px) {
+@media (max-width: 1279px) and (min-width: 768px) {
   .container {
+    width: 100%;
     max-width: 768px;
-    padding: 0 32px;
+    padding: 0 clamp(24px, 3.5vw, 32px);
+  }
+
+  .heading-xl {
+    font-size: 76px;
+    line-height: 76px;
+  }
+
+  .heading-lg {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .gh-header__bar {
+    width: 100%;
+    max-width: 704px;
+    height: 40px;
+    margin-top: 32px;
+    padding: 0;
+  }
+
+  .gh-header__desktop-group {
+    display: none;
+  }
+
+  .gh-burger {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+
+  .gh-burger__line {
+    top: 18px;
+    left: 6.67px;
+    width: 26.67px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--gh-white);
+  }
+
+  .gh-burger__line::before {
+    top: -8px;
+    left: 0;
+    width: 26.67px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--gh-white);
+  }
+
+  .gh-burger__line::after {
+    top: 8px;
+    left: 0;
+    width: 26.67px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--gh-white);
+  }
+
+  .gh-header--tablet-open .gh-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: var(--gh-overlay);
+    z-index: 39;
+  }
+
+  .gh-tablet-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 351px;
+    height: 100vh;
+    background: var(--gh-green);
+    z-index: 40;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .gh-header--tablet-open .gh-tablet-menu {
+    display: flex;
+  }
+
+  .gh-tablet-menu__header {
+    width: 100%;
+    min-height: 72px;
+    padding: 32px 32px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .gh-close--tablet {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+
+  .gh-close--tablet span {
+    top: 18px;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--gh-white);
+    transform: rotate(45deg);
+  }
+
+  .gh-close--tablet span::before {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--gh-white);
+    transform: rotate(90deg);
+  }
+
+  .gh-nav--drawer {
+    width: 123px;
+    margin: 288px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .gh-nav--drawer .gh-nav__item {
+    height: 44px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid var(--gh-white);
+  }
+
+  .gh-nav--drawer .gh-nav__item:nth-child(1) {
+    width: 118px;
+    padding: 12px;
+  }
+
+  .gh-nav--drawer .gh-nav__item:nth-child(2) {
+    width: 122px;
+    padding: 12px 21px;
+  }
+
+  .gh-nav--drawer .gh-nav__item:nth-child(3) {
+    width: 123px;
+    padding: 12px 28px;
+  }
+
+  .gh-cta--drawer {
+    display: flex;
+    width: 157px;
+    margin: auto auto 48px;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero__inner {
+    width: 100%;
+    max-width: 768px;
+    min-height: 1020px;
+    padding: 0;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 704px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+
+  .hero__content p {
+    margin-top: 24px;
+    max-width: 603px;
+  }
+
+  .hero__image {
+    width: 100%;
+    max-width: 768px;
+    height: clamp(460px, 70vw, 536px);
+    margin-top: 52px;
+  }
+
+  .ad {
+    padding: 100px 0;
+  }
+
+  .ad__text {
+    max-width: 704px;
+    min-height: 288px;
+    gap: 16px;
+    margin: 0 auto;
+  }
+
+  .ad__highlight {
+    min-height: 86px;
+    padding: 0 16px;
+  }
+
+  .vegetables {
+    padding: 100px 0;
+  }
+
+  .veg-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 24px;
   }
 }

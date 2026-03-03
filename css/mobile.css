@@ -1,10 +1,249 @@
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .container {
+    width: 100%;
     max-width: 375px;
-    padding: 0 20px;
+    padding: 0 clamp(16px, 5vw, 20px);
+    margin: 0 auto;
+  }
+
+  .heading-xl {
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: -0.78px;
+  }
+
+  .heading-lg {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.72px;
+  }
+
+  .heading-md {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.42px;
+  }
+
+  .body-lg {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .section-head {
+    width: 100%;
+    max-width: 335px;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section {
     padding: 24px 0;
+  }
+
+  .gh-header__bar {
+    width: calc(100vw - 40px);
+    max-width: 335px;
+    height: 32px;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .gh-logo {
+    width: 168px;
+    height: 16px;
+  }
+
+  .gh-logo__img--desktop {
+    display: none;
+  }
+
+  .gh-logo__img--mobile {
+    display: block;
+    width: 168px;
+    height: 16px;
+  }
+
+  .gh-header__desktop-group {
+    display: none;
+  }
+
+  .gh-burger {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+
+  .gh-burger__line {
+    top: 14.5px;
+    left: 5.33px;
+    width: 21.33px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--gh-white);
+  }
+
+  .gh-burger__line::before {
+    top: -6px;
+    left: 0;
+    width: 21.33px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--gh-white);
+  }
+
+  .gh-burger__line::after {
+    top: 6px;
+    left: 0;
+    width: 21.33px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--gh-white);
+  }
+
+  .gh-header--mobile-open .gh-mobile-menu {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: var(--gh-green);
+    z-index: 41;
+  }
+
+  .gh-mobile-menu .gh-close--mobile {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .gh-close--mobile span {
+    top: 14.5px;
+    left: 8px;
+    width: 16px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--gh-white);
+    transform: rotate(45deg);
+  }
+
+  .gh-close--mobile span::before {
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--gh-white);
+    transform: rotate(90deg);
+  }
+
+  .gh-nav--mobile {
+    width: 118px;
+    margin: 296px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .gh-nav--mobile .gh-nav__item {
+    height: 44px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid var(--gh-white);
+  }
+
+  .gh-nav--mobile .gh-nav__item:nth-child(1) {
+    width: 118px;
+    padding: 12px 16px;
+  }
+
+  .gh-nav--mobile .gh-nav__item:nth-child(2) {
+    width: 118px;
+    padding: 12px 24px;
+  }
+
+  .gh-nav--mobile .gh-nav__item:nth-child(3) {
+    width: 116px;
+    padding: 12px 32px;
+  }
+
+  .gh-cta--mobile {
+    display: flex;
+    width: 175px;
+    margin: 232px auto 0;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero__inner {
+    width: 100%;
+    max-width: 375px;
+    min-height: 740px;
+    padding: 0;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .hero__content {
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
+  }
+
+  .hero__content p {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .hero__image {
+    width: 100%;
+    max-width: 375px;
+    height: clamp(320px, 98vw, 370px);
+    margin-top: 48px;
+  }
+
+  .ad,
+  .vegetables {
+    padding: 80px 0;
+  }
+
+  .ad__text {
+    max-width: 335px;
+    min-height: 312px;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .ad__highlight {
+    min-height: 70px;
+    border-radius: 12px;
+    padding: 0 10px;
+  }
+
+  .veg-grid {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .veg-card {
+    width: 100%;
+    min-height: 376px;
+    padding: 32px 24px;
+  }
+
+  .veg-card img {
+    width: 280px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
