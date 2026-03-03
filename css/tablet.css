@@ -216,4 +216,27 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 28px 24px;
   }
+
+  .reviews {
+    padding: 100px 0;
+  }
+
+  .review-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: none;
+    gap: 24px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .review-card {
+    width: 340px;
+    flex: 0 0 340px;
+    min-height: 248px;
+    scroll-snap-align: start;
+  }
 }
