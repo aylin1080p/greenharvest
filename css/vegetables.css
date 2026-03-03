@@ -1,3 +1,60 @@
+/* Vegetables */
 .vegetables {
-  background: var(--chianti);
+  padding: 100px 0;
+}
+
+.vegetables .section-head h2 span {
+  color: var(--blush, #d4bfc4);
+}
+
+.vegetables .section-head {
+  max-width: 626px;
+}
+
+.veg-grid {
+  list-style: none;
+  margin: 52px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 24px;
+}
+
+.veg-card {
+  background: var(--white);
+  border-radius: 40px;
+  padding: 32px 30px;
+  min-height: 379px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.veg-card h3 {
+  margin: 0;
+  color: var(--chianti);
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+}
+
+.veg-card p {
+  margin: 12px 0 0;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.veg-card img {
+  width: 280px;
+  height: 244px;
+  object-fit: contain;
+  margin-top: auto;
+}
+
+.veg-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(20, 20, 20, 0.12);
 }
