@@ -47,25 +47,24 @@ body {
   height: 20px;
   display: flex;
   align-items: center;
+  gap: 8px;
   text-decoration: none;
   color: var(--gh-white);
 }
 
-.gh-logo__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.gh-logo__img--desktop {
-  width: 216px;
+.gh-logo__mark {
+  width: 20px;
   height: 20px;
+  flex-shrink: 0;
+  display: block;
+  fill: currentColor;
 }
 
-.gh-logo__img--mobile {
-  display: none;
-  width: 168px;
-  height: 16px;
+.gh-logo__text {
+  width: 186.67px;
+  height: 16.67px;
+  display: block;
+  fill: currentColor;
 }
 
 .gh-nav__item:hover,
