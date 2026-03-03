@@ -66,27 +66,4 @@ const initMenu = () => {
   });
 };
 
-const loadPartials = async () => {
-  const partialNodes = document.querySelectorAll('load[src]');
-
-  await Promise.all(
-    [...partialNodes].map(async node => {
-      const src = node.getAttribute('src');
-      if (!src) return;
-
-      const response = await fetch(src);
-      if (!response.ok) throw new Error(`${src} not loaded`);
-      const html = await response.text();
-      node.outerHTML = html;
-    })
-  );
-};
-
-const bootstrap = async () => {
-  await loadPartials();
-  initMenu();
-};
-
-bootstrap().catch(error => {
-  console.error('Bootstrap failed:', error);
-});
+initMenu();
