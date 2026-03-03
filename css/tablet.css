@@ -192,6 +192,31 @@
     margin-top: 52px;
   }
 
+  .how {
+    grid-template-columns: 1fr;
+  }
+
+  .how__image-wrap {
+    padding: 100px 64px;
+  }
+
+  .how__image {
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .how__content-wrap {
+    padding: 100px 164px;
+  }
+
+  .how__content {
+    width: 440px;
+    margin: 0 auto;
+  }
+
   .ad {
     padding: 100px 0;
   }
@@ -263,5 +288,22 @@
     max-width: 640px;
     padding: 52px;
     gap: 52px;
+  }
+
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer__top {
+    grid-template-columns: 265px 227px;
+    row-gap: 64px;
+  }
+
+  .footer__contacts {
+    grid-column: 2;
+  }
+
+  .footer__bottom {
+    margin-top: 100px;
   }
 }

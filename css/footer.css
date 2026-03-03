@@ -1,250 +1,93 @@
-/* =========================================================
-   FOOTER - EBRU (BASE STYLES)
-   ========================================================= */
-
+/* Footer */
 .footer {
-  background-color: #7a3145;
-  color: #fbfbfb;
-}
-
-.footer a {
-  color: #fbfbfb;
-  text-decoration: none;
-}
-
-/* =========================================================
-   FOOTER - CONTAINER
-   ========================================================= */
-
-.footer-container {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 52px 100px;
-  gap: 124px;
-}
-
-/* =========================================================
-   FOOTER - TOP LAYOUT
-   ========================================================= */
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* =========================================================
-   FOOTER - BRAND AREA
-   ========================================================= */
-
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  max-width: 265px;
-  position: relative;
+  padding: 52px 0 32px;
 }
 
 .footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   width: 216px;
   height: 20px;
-  fill: #fbfbfb;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--white);
 }
 
-.logo-icon {
+.footer-logo__mark {
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
-  width: 16px;
-  height: 16px;
+  fill: currentColor;
 }
 
-.footer-text {
-  font-size: 16px;
-  line-height: 1.25;
+.footer-logo__text {
+  width: 186.67px;
+  height: 16.67px;
+  fill: currentColor;
 }
 
-/* =========================================================
-   FOOTER - RIGHT AREA
-   ========================================================= */
-
-.footer-right {
+.footer__top {
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 120px;
-  align-items: flex-start;
+  grid-template-columns: 265px 228px 216px;
+  justify-content: space-between;
 }
 
-/* =========================================================
-   FOOTER - NAVIGATION
-   ========================================================= */
+.footer__brand p {
+  margin-top: 24px;
+}
 
-.footer-nav ul {
-  display: flex;
-  flex-direction: column;
+.footer__menu,
+.footer__contacts {
+  display: grid;
   gap: 24px;
+  align-content: start;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.footer-nav a {
-  font-weight: 600;
+.footer__menu a,
+.footer__contacts a,
+.footer__contacts p,
+.footer__bottom p {
+  margin: 0;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
   font-size: 32px;
-  line-height: 1;
-  letter-spacing: -0.015em;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  font-weight: 600;
+}
+
+.footer__contacts a,
+.footer__contacts p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-/* =========================================================
-   FOOTER - CONTACT
-   ========================================================= */
-
-.footer-contact {
-  max-width: 216px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.footer-contact a,
-.footer-contact address {
-  color: #fbfbfb;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* =========================================================
-   FOOTER - BOTTOM AREA
-   ========================================================= */
-
-.footer-bottom {
+.footer__bottom {
   margin-top: 124px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__bottom p {
+  color: var(--blush, #d4bfc4);
+  text-transform: none;
   font-size: 16px;
-  line-height: 1.25;
-  color: #d4bfc4;
+  line-height: 20px;
+  letter-spacing: 0;
   font-weight: 500;
 }
 
-.footer-bottom a {
-  color: inherit;
+.footer__menu a:hover,
+.footer__menu a:focus-visible,
+.footer__contacts a:hover,
+.footer__contacts a:focus-visible {
+  color: var(--blush, #d4bfc4);
 }
-
-/* =========================================================
-   FOOTER - MEDIA QUERIES
-   ========================================================= */
-
-/* ================= TABLET ================= */
-
-@media screen and (max-width: 1279px) {
-  .footer-container {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 32px;
-  }
-
-  .footer-top {
-    gap: 60px;
-    margin-top: 52px;
-  }
-
-  .footer-brand {
-    max-width: 300px;
-  }
-
-  .footer-right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .footer-nav ul {
-    gap: 24px;
-  }
-
-  .footer-logo {
-    width: 216px;
-    height: 20px;
-  }
-
-  .footer-contact {
-    padding-top: 64px;
-  }
-}
-
-/* ================= MOBILE ================= */
-
-@media screen and (max-width: 767px) {
-  .footer-container {
-    padding: 40px 20px;
-    max-width: 375px;
-    width: 100%;
-  }
-
-  .footer-top {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .footer-right {
-    gap: 14px;
-  }
-
-  .logo-text {
-    width: 148px;
-    height: 12px;
-  }
-
-  .footer-text {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .footer-logo {
-    width: 168px;
-    height: 16px;
-    gap: 4px;
-  }
-
-  .logo-icon {
-    width: 16px;
-    height: 16px;
-  }
-
-  .footer-nav ul {
-    gap: 14px;
-  }
-
-  .footer-contact a,
-  .footer-contact address {
-    color: #fbfbfb;
-    font-size: 14px;
-    line-height: 1.42;
-  }
-
-  .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    line-height: 1.42;
-    font-size: 14px;
-  }
-}
-
-/* =========================================================
-   FOOTER - MEDIA - END
-   ========================================================= */

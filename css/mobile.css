@@ -52,16 +52,17 @@
   .gh-logo {
     width: 168px;
     height: 16px;
+    gap: 4px;
   }
 
-  .gh-logo__img--desktop {
-    display: none;
-  }
-
-  .gh-logo__img--mobile {
-    display: block;
-    width: 168px;
+  .gh-logo__mark {
+    width: 16px;
     height: 16px;
+  }
+
+  .gh-logo__text {
+    width: 148px;
+    height: 12px;
   }
 
   .gh-header__desktop-group {
@@ -210,6 +211,44 @@
     margin-top: 48px;
   }
 
+  .how {
+    grid-template-columns: 1fr;
+  }
+
+  .how__image-wrap {
+    padding: 40px 20px;
+  }
+
+  .how__image {
+    width: 100%;
+    max-width: 335px;
+    height: auto;
+    aspect-ratio: 335 / 452;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .how__content-wrap {
+    padding: 80px 20px;
+  }
+
+  .how__content {
+    width: 100%;
+    max-width: 335px;
+    min-height: 516px;
+    margin: 0 auto;
+  }
+
+  .steps {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .steps li {
+    gap: 20px;
+    padding: 12px;
+  }
+
   .ad,
   .vegetables {
     padding: 80px 0;
@@ -336,5 +375,63 @@
   .order-content-social-networks ul {
     gap: 8px;
     flex-wrap: wrap;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer__top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer__brand p {
+    margin-top: 14px;
+  }
+
+  .footer-logo {
+    width: 168px;
+    height: 16px;
+    gap: 4px;
+  }
+
+  .footer-logo__mark {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-logo__text {
+    width: 148px;
+    height: 12px;
+  }
+
+  .footer__menu,
+  .footer__contacts {
+    gap: 14px;
+  }
+
+  .footer__menu a {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+  }
+
+  .footer__contacts {
+    grid-column: auto;
+  }
+
+  .footer__contacts a,
+  .footer__contacts p,
+  .footer__bottom p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer__bottom {
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 }
