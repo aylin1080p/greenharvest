@@ -71,9 +71,15 @@
   min-height: 796px;
   display: grid;
   grid-template-columns: 504px 640px;
-  justify-content: space-between;
   column-gap: 36px;
   align-items: start;
+}
+
+@media (min-width: 1280px) {
+  .hero .container {
+    padding-left: 100px;
+    padding-right: 0;
+  }
 }
 
 .hero__content {
