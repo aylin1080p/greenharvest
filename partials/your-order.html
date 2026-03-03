@@ -1,1 +1,93 @@
-<section class="your-order section"><div class="container">Your order</div></section>
+<section class="your-order section" id="order">
+  <div class="container order-content">
+    <div class="order-content-text-box">
+      <div class="order-content-text">
+        <h2>Fresh <span class="accent-text-harvest">harvest</span> box has got you covered</h2>
+        <p>
+          Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to
+          eat healthier or support local farmers. Order your box today and start enjoying the best
+          that nature has to offer!
+        </p>
+      </div>
+    </div>
+
+    <div class="order-content-box">
+      <div class="order-content-card">
+        <h3>
+          Ordering <span class="accent-text-from-us">from us</span> is quick and easy! Fill out
+          <span class="accent-text-the-form">the form</span> below and we will contact you!
+        </h3>
+        <form class="order-form" id="order-form" action="">
+          <input
+            class="order-input name-input"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            class="order-input email-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
+          <textarea
+            class="order-textarea"
+            name="comment"
+            id="comment"
+            placeholder="Comment"
+            rows="3"
+          ></textarea>
+          <div class="order-form-button">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="order-content-social-media-wrapper">
+        <div class="order-content-card-image">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./img/images/footer-mobile-1x.jpg 1x, ./img/images/footer-mobile-2x.jpg 2x"
+            />
+            <source
+              media="(max-width: 1279px)"
+              srcset="./img/images/footer-tablet-1x.jpg 1x, ./img/images/footer-tablet-2x.jpg 2x"
+            />
+            <img
+              src="./img/images/footer-desktop-1x.jpg"
+              srcset="./img/images/footer-desktop-1x.jpg 1x, ./img/images/footer-desktop-2x.jpg 2x"
+              alt="Woman preparing healthy smoothie"
+              class="order-img"
+            />
+          </picture>
+        </div>
+
+        <div class="order-content-social-networks">
+          <p>Follow us on our social networks:</p>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/goit.turkiye/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li>/</li>
+            <li>
+              <a
+                href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>/</li>
+            <li><a href="https://m.youtube.com/@GoITTurkey" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
