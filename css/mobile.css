@@ -1,5 +1,6 @@
 
  /* Reviews */
+ @media (max-width: 767px) {
  .review-grid {
    margin-top: 40px;
    display: flex;
@@ -18,7 +19,7 @@
    padding: 20px 16px;
    scroll-snap-align: start;
  }
-
+ }
 
 
 @media (max-width: 767px) {

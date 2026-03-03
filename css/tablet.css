@@ -1,4 +1,5 @@
 /* Reviews */
+@media (max-width: 767px) {
 .reviews {
   padding: 100px 0;
 }
@@ -22,7 +23,7 @@
   scroll-snap-align: start;
 }
 
-
+}
 @media (max-width: 1279px) and (min-width: 768px) {
   .container {
     width: 100%;
