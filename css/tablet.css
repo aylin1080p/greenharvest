@@ -177,6 +177,7 @@
     width: 100%;
     max-width: 704px;
     margin: 0 auto;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
