@@ -246,4 +246,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .review-grid {
+    margin-top: 40px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: none;
+    gap: 18px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .review-card {
+    width: min(335px, calc(100vw - 40px));
+    flex: 0 0 min(335px, calc(100vw - 40px));
+    min-height: 228px;
+    padding: 20px 16px;
+    scroll-snap-align: start;
+  }
 }
