@@ -1,33 +1,5 @@
 /*your-order-recep-desktop-css*/
 
-h1,
-h2,
-h3,
-ul,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 body {
   margin: 0;
   font-family: 'Inter Tight', sans-serif;
@@ -49,11 +21,6 @@ body {
   margin: 0 auto;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 .order-content-text-box {
   max-width: 1280px;
 
