@@ -265,4 +265,76 @@
     padding: 20px 16px;
     scroll-snap-align: start;
   }
+
+  .order-content {
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .order-content-text {
+    max-width: 335px;
+  }
+
+  .order-content-text h2 {
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.72px;
+    margin-bottom: 20px;
+  }
+
+  .order-content-text p {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .order-content-box {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 335px;
+  }
+
+  .order-content-card,
+  .order-content-social-media-wrapper {
+    max-width: 335px;
+    padding: 40px 20px;
+  }
+
+  .order-content-card h3 {
+    font-size: 28px;
+    letter-spacing: -0.42px;
+    margin-bottom: 40px;
+  }
+
+  .order-form {
+    gap: 20px;
+  }
+
+  .order-input,
+  .order-textarea {
+    padding: 14px 15px;
+  }
+
+  .order-input::placeholder,
+  .order-textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .order-form-button {
+    margin-top: 20px;
+  }
+
+  .order-content-social-media-wrapper {
+    gap: 20px;
+  }
+
+  .order-content-social-networks p {
+    font-size: 14px;
+  }
+
+  .order-content-social-networks ul {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 }

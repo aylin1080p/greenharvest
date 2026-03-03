@@ -1,3 +1,234 @@
 .your-order {
-  background: var(--green);
+  background-color: var(--green);
+}
+
+.order-content {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.order-content-text-box {
+  width: 100%;
+}
+
+.order-content-text {
+  max-width: 751px;
+}
+
+.order-content-text h2 {
+  margin: 0 0 24px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.accent-text-harvest {
+  color: var(--blush, #d4bfc4);
+}
+
+.order-content-text p {
+  margin: 0;
+  max-width: 742px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.order-content-box {
+  display: flex;
+  gap: 32px;
+}
+
+.order-content-card,
+.order-content-social-media-wrapper {
+  width: 100%;
+  max-width: 524px;
+  border-radius: 30px;
+}
+
+.order-content-card {
+  background-color: var(--white);
+  padding: 48px 52px;
+}
+
+.order-content-card h3 {
+  margin: 0 0 52px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.accent-text-from-us {
+  color: var(--chianti);
+}
+
+.accent-text-the-form {
+  color: var(--green);
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.order-input,
+.order-textarea {
+  border: 1px solid #858585;
+  outline: none;
+  transition: border-color 0.2s ease;
+  color: var(--black);
+}
+
+.order-input {
+  border-radius: 30px;
+  padding: 16px 15px;
+}
+
+.order-textarea {
+  border-radius: 15px;
+  padding: 16px 15px;
+  resize: none;
+}
+
+.order-input::placeholder,
+.order-textarea::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--black);
+}
+
+.email-input:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.email-input:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+
+.text-valid,
+.text-invalid {
+  display: none;
+  margin: -12px 0 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.text-valid {
+  color: #3cbc81;
+}
+
+.text-invalid {
+  color: #e74a3b;
+}
+
+.email-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.email-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.order-input:hover,
+.order-input:focus,
+.order-textarea:hover,
+.order-textarea:focus {
+  border-color: var(--chianti);
+}
+
+.order-form-button {
+  margin-top: 24px;
+}
+
+.order-form-button button {
+  width: 100%;
+  border: 0;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: var(--chianti);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.27px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.order-form-button button:hover,
+.order-form-button button:focus {
+  background-color: #d4bfc4;
+  color: var(--chianti);
+}
+
+.order-form-button button:active {
+  background-color: var(--white);
+  color: var(--chianti);
+}
+
+.order-content-social-media-wrapper {
+  background-color: var(--chianti);
+  padding: 48px 52px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.order-content-card-image {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.order-content-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+.order-content-social-networks p {
+  margin: 0 0 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--blush, #d4bfc4);
+}
+
+.order-content-social-networks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.order-content-social-networks li,
+.order-content-social-networks a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.27px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.order-content-social-networks a:hover,
+.order-content-social-networks a:focus {
+  color: var(--blush, #d4bfc4);
 }
