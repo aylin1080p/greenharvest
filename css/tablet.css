@@ -255,12 +255,12 @@ height: 640px;
     min-width: 768px;
     
 }
-.hiw-text-box h2 {
+.hiw-h2 {
 font-size: 32px;
 margin:0px;
 
 }
-.hiw-text-box p {
+.hiw-p {
 width:440px;
 font-weight: 500;
 font-size: 16px;
