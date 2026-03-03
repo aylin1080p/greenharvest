@@ -70,9 +70,10 @@
 .hero__inner {
   min-height: 796px;
   display: grid;
-  grid-template-columns: 1fr 640px;
+  grid-template-columns: 504px 640px;
+  justify-content: space-between;
+  column-gap: 36px;
   align-items: start;
-  padding-right: 0;
 }
 
 .hero__content {
@@ -90,7 +91,7 @@
   width: 640px;
   height: 796px;
   background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url("../img/hero-desktop.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 640px 796px;
+  background-position: top center;
   background-repeat: no-repeat;
 }
