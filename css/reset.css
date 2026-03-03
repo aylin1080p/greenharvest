@@ -1,0 +1,23 @@
+:root {
+  --white: #fbfbfb;
+  --chianti: #7a3145;
+  --green: #576f35;
+  --black: #141414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter Tight', sans-serif;
+  color: var(--white);
+  background: var(--chianti);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
