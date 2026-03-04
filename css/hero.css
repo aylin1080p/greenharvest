@@ -80,6 +80,12 @@
     padding-left: 100px;
     padding-right: 0;
   }
+
+  .hero__image {
+    justify-self: end;
+    background-position: right top;
+    background-size: 100% 100%;
+  }
 }
 
 .hero__content {
