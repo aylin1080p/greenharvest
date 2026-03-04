@@ -3,6 +3,13 @@
   padding: 100px 0;
 }
 
+@media (min-width: 1280px) {
+  .vegetables .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 .vegetables .section-head h2 span {
   color: var(--blush, #d4bfc4);
 }

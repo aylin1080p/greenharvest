@@ -96,7 +96,7 @@
 .hero__image {
   width: 640px;
   height: 796px;
-  background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url("../img/hero-desktop.png");
+  background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url("../img/hero-desktop.jpg");
   background-size: 640px 796px;
   background-position: top center;
   background-repeat: no-repeat;
